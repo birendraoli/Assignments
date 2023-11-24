@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 90vw;
+    text-align: center;
+    margin: 2% 5%;
+}
+
+header h1 {
+    padding: 2rem;
+    font-size: 4rem;
+}
+
+section {
+    width: 90vw;
+    margin: 2% 5%;
+    display: flex;
+}
+
+.info {
+    margin: 0.7rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 2.2rem 0.7rem 0.7rem 0.7rem;
+    position: relative;
+}
+
+.info1 {
+    display: flex;
+}
+
+.info > h2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2px 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#chicken > h2 {
+    background-color: bisque;
+}
+
+#beef > h2 {
+    background-color: rgb(205, 255, 204);
+}
+
+#sushi > h2 {
+    background-color: rgb(150, 227, 255);
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .info1 {
+        flex-wrap: wrap;
+    }
+}
